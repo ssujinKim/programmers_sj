@@ -3,11 +3,9 @@ class Solution {
         String answer = "";
         
         for(int i = 0; i < my_string.length(); i++) {
-            if(my_string.charAt(i) == 'a') continue;
-            if(my_string.charAt(i) == 'e') continue;
-            if(my_string.charAt(i) == 'i') continue;
-            if(my_string.charAt(i) == 'o') continue;
-            if(my_string.charAt(i) == 'u') continue;
+            if(my_string.charAt(i) == 'a' || my_string.charAt(i) == 'e' ||
+               my_string.charAt(i) == 'i' || my_string.charAt(i) == 'o' ||
+               my_string.charAt(i) == 'u') continue;
             answer += my_string.charAt(i);
         }
         
