@@ -1,7 +1,6 @@
 class Solution {
     public int solution(String[] babbling) {
         int answer = 0;
-        String[] arr = {"aya", "ye", "woo", "ma"};
         
         for(int i = 0; i < babbling.length; i++) {
             String b = babbling[i];
@@ -14,7 +13,7 @@ class Solution {
             }
             if(b.length() > 3) {
                 while(b.length() > 0) {
-                    //if(b.length() < 2) break;
+                    if(b.length() < 2) break;
                     
                     if(b.length() >= 2 && (b.substring(0,2).equals("ye") || b.substring(0,2).equals("ma"))) {
                         b = b.substring(2, b.length());
